@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/AtlasIA-WebApp/static/css/main.ed290970.css",
+    "main.js": "/AtlasIA-WebApp/static/js/main.16027abd.js",
+    "static/media/character_1.png": "/AtlasIA-WebApp/static/media/character_1.c50c60a40f6b336da866.png",
+    "static/media/character_2.png": "/AtlasIA-WebApp/static/media/character_2.60dd50fcb34299aad763.png",
+    "static/media/address_sans_pro_bold.otf": "/AtlasIA-WebApp/static/media/address_sans_pro_bold.c2bc5008484844bb1b72.otf",
+    "static/media/address_sans_pro_regular.otf": "/AtlasIA-WebApp/static/media/address_sans_pro_regular.84a7137deaa0217b5c47.otf",
+    "static/media/address_sans_pro_xt_regular.otf": "/AtlasIA-WebApp/static/media/address_sans_pro_xt_regular.3a3eef950838dc651dcd.otf",
+    "static/media/mbzuai.webp": "/AtlasIA-WebApp/static/media/mbzuai.388b5f66453eaa8c0624.webp",
+    "static/media/2A2I-transformed.webp": "/AtlasIA-WebApp/static/media/2A2I-transformed.6208bda0da9c54d1d28d.webp",
+    "index.html": "/AtlasIA-WebApp/index.html",
+    "static/media/arrow_left_s.svg": "/AtlasIA-WebApp/static/media/arrow_left_s.468fd5372fb3fe9c5ec2.svg",
+    "static/media/arrow_right_s.svg": "/AtlasIA-WebApp/static/media/arrow_right_s.bac6f3b88e270153485e.svg",
+    "main.ed290970.css.map": "/AtlasIA-WebApp/static/css/main.ed290970.css.map",
+    "main.16027abd.js.map": "/AtlasIA-WebApp/static/js/main.16027abd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ed290970.css",
+    "static/js/main.16027abd.js"
+  ]
+}
