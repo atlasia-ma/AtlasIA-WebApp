@@ -11,7 +11,7 @@ const Navigation: React.FC = () => {
   const [isActive, setIsActive] = useState(false)
   const [scrolled, setNavbar] = useState(false)
   const changeBackground = () => {
-    console.log(window.scrollY)
+    // console.log(window.scrollY)
     if (window.scrollY >= 66) {
       setNavbar(true)
     } else {

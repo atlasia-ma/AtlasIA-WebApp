@@ -8,18 +8,18 @@ const NavBrand : React.FC<INavBrand> = ({isActive}) => {
             {/* <h2 className='text-gradient-primary text-4xl'>{props.title}</h2> */}
             <ul className={`flex flex-col lg:flex-row flex-nowrap justify-end absolute left-0 right-0 mt-5 lg:mt-0 mx-4 lg:mx-0 rounded-md lg:relative bg-navy-ascent lg:bg-color-none p-5 lg:p-0 ${isActive ? 'menu-toggle-active' : 'menu-toggle-nonactive'}`}>
                 <NavItem
-                    to='#'
+                    to='#intro'
                     text='Home'
                 />
 
                 <NavItem
-                    to='#tarjama'
+                    to='#aji_terjem'
                     text='Aji Nterjmou 👨‍💻'
                 />
 
                 <NavItem
-                    to='#features'
-                    text='Features'
+                    to='#ytb_transcripts'
+                    text='Aji nvalidiw 📜'
                 />
 
                 <NavItem
@@ -28,8 +28,8 @@ const NavBrand : React.FC<INavBrand> = ({isActive}) => {
                 />
 
                 <NavItem
-                    to='#team'
-                    text='Team'
+                    to='#collabs'
+                    text='Collabs'
                 />
 
                 <NavItem

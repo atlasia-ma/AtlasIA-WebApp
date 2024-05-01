@@ -36,12 +36,16 @@
     }
     .bg-cream {
         background-color: #fff8dc; /* or any other creamy color you prefer */
-      }
+    }
     body {
         @apply bg-navy;
         font-family: 'Open Sans' , 'sans-serif';
         /* background-image: url(./assets/images/eggs_texture.PNG) !important;
         background-repeat: repeat; */
+    }
+    .video-container {
+        display: flex;
+        justify-content: center;
     }
 
     /* Eggs background */
@@ -457,5 +461,6 @@
         background: rgba(0, 0, 0, 0);
         transform: scale(1.5);
       }
+      
       
 }

@@ -30,7 +30,9 @@ module.exports = {
         'purple': '#846ff4'
       },
       colors: {
-        grey: colors.grey
+        grey: colors.grey,
+        white: colors.white,
+        pink: colors.pink
       },
     },
     container: {
