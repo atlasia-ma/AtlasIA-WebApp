@@ -1,5 +1,4 @@
 import YouTube, { YouTubePlayer } from "react-youtube";
-import TitleSectionNonGlowing from "../../molecules/TitleSectionNonGlowing";
 import { useState, useEffect } from "react";
 
 export default function App() {
@@ -64,10 +63,10 @@ export default function App() {
   }, []);
 
   const opts = {
-    height: "450px",
-    width: "650px", // Change to auto adjust width
+    height: "320px",
+    width: "450px", // Change to auto adjust width
     playerVars: {
-      autoplay: 1
+      autoplay: 0
     }
   };
 
@@ -79,39 +78,34 @@ export default function App() {
 
   return (
     <div className="max-w-2/3 mx-auto mt-8 p-6">
-      <TitleSectionNonGlowing
-        title=""
-        subtitle="Aji nvalidiw 📜"
-        classes="mb-4"
-      />
-      <div className="lb-4 mx-auto text-center">
+      <div className="text-center mb-4">
         <div className="video-container">
           <YouTube videoId={currentVideoId} opts={opts} onReady={_onReady} />
         </div>
-        <div className="p-10">
-          <button onClick={nextVideo} className="bg-blue-100 hover:bg-blue-200 text-blue-900 font-bold py-3 px-6 rounded mr-4">Previous Video</button>
-          <button onClick={togglePlay} className="bg-green-100 hover:bg-green-200 text-green-900 font-bold py-3 px-6 rounded mr-4">Play</button>
-          <button onClick={togglePause} className="bg-red-100 hover:bg-red-200 text-red-900 font-bold py-3 px-6 rounded mr-4">Pause</button>
-          <button onClick={replayVideo} className="bg-blue-100 hover:bg-blue-200 text-blue-900 font-bold py-3 px-6 rounded mr-4">Replay</button>
-          <button onClick={nextVideo} className="bg-blue-100 hover:bg-blue-200 text-blue-900 font-bold py-3 px-6 rounded mr-4">Next Video</button>
+        <div className="button-grid" style={{padding: '40px'}}>
+            <button onClick={nextVideo} className="bg-blue-100 hover:bg-blue-200 text-blue-900 font-bold py-3 px-6 rounded btn_video" style={{margin: '8px'}}>Previous Video</button>
+            <button onClick={togglePlay} className="bg-green-100 hover:bg-green-200 text-green-900 font-bold py-3 px-6 rounded btn_video" style={{margin: '8px'}}>Play</button>
+            <button onClick={togglePause} className="bg-red-100 hover:bg-red-200 text-red-900 font-bold py-3 px-6 rounded btn_video" style={{margin: '8px'}}>Pause</button>
+            <button onClick={replayVideo} className="bg-blue-100 hover:bg-blue-200 text-blue-900 font-bold py-3 px-6 rounded btn_video" style={{margin: '8px'}}>Replay</button>
+            <button onClick={nextVideo} className="bg-blue-100 hover:bg-blue-200 text-blue-900 font-bold py-3 px-6 rounded btn_video">Next Video</button>
         </div>
+
+
       </div>
 
-      <div>
-        <div className="text-center">
-          <h3 className="text-lg text-md font-medium mb-2">Transcript:</h3>
-          <textarea
-            rows={5}
-            value={transcript}
-            onChange={(e) => setTranscript(e.target.value)}
-            placeholder=""
-            className="mt-1 block mx-auto text-black border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
-            style={{ width: '90%', maxWidth: '860px'}}
-          />
-        </div>
+      <div className="text-center">
+        <h3 className="text-lg text-md font-medium mb-2">Transcript:</h3>
+        <textarea
+          rows={5}
+          value={transcript}
+          onChange={(e) => setTranscript(e.target.value)}
+          placeholder=""
+          className="mt-1 block mx-auto text-black border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+          style={{ width: '90%', maxWidth: '860px'}}
+        />
       </div>
 
-      <button  className="bg-green-100 hover:bg-green-200 text-green-900 font-bold py-3 px-6 rounded mt-4 block mx-auto">Submit</button>
+      <button className="bg-green-100 hover:bg-green-200 text-green-900 font-bold py-3 px-6 rounded mt-4 block mx-auto">Submit</button>
     </div>
   );
 }

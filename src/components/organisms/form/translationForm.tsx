@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import refreshIcon from '../../../assets/images/icon/refresh.png'; // Import animated refresh icon
 import TitleSectionNonGlowing from "../../molecules/TitleSectionNonGlowing";
 
-const AjiTerjem = () => {
+const ValidateTranslation = () => {
   const [sentence, setSentence] = useState('');
   const [confidence, setConfidence] = useState('medium');
   const [language, setLanguage] = useState('english');
@@ -33,9 +33,15 @@ const AjiTerjem = () => {
   return (
     <div className="max-w-2/3 mx-auto mt-8 p-6" style={{ marginTop: '40px' }}>
       {/* <h2 className="text-6xl font-semibold mb-4 text-white" style={{ textAlign: 'center' }}>Aji Nterjmou 👨‍💻</h2> */}
-      <TitleSectionNonGlowing
+      {/* <TitleSectionNonGlowing
         title=""
         subtitle="Aji Nterjmou 👨‍💻"
+        classes="mb-4"
+      /> */}
+
+      <TitleSectionNonGlowing
+        title=""
+        subtitle="Aji nvalidiw 📜"
         classes="mb-4"
       />
       
@@ -79,7 +85,7 @@ const AjiTerjem = () => {
   );
 };
 
-export default AjiTerjem;
+export default ValidateTranslation;
 
 
 // #525f7f text color

@@ -6,7 +6,8 @@ import YoutubeTranscript from "./components/organisms/youtubeTranscript/youtubeT
 import Navigation from "./components/organisms/navigation";
 import RoadMap from "./components/organisms/roadmap";
 import Companies from "./components/organisms/companies";
-import AjiTerjem from "./components/organisms/form/translationForm";
+import ValidateTranslation from "./components/organisms/form/translationForm";
+import AjiTerjem from "./components/organisms/translation";
 
 function App() {
   return (
@@ -21,7 +22,11 @@ function App() {
         <AjiTerjem />
       </div>
 
-      <div className='container' id="ytb_transcripts" style={{paddingTop: '20px'}}>
+      <div className="container" id="ytb_transcripts" style={{paddingTop: '10px'}}>
+        <ValidateTranslation />
+      </div>
+
+      <div className='container' id="ytb_transcripts" style={{paddingTop: '5px'}}>
         <YoutubeTranscript />
       </div>
 {/* 

@@ -7,6 +7,14 @@ import { Carousel } from 'react-responsive-carousel';
 
 
 const ContentRight: React.FC = () => {
+
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className="flex-grow-0 flex-shrink w-full xl:w-6/12 px-10">
       <TitleSection
@@ -32,8 +40,8 @@ const ContentRight: React.FC = () => {
         {/* <p style={{textAlign: 'center'}}>Made with ❤️ by Moroccans for Moroccans ❤️.</p> */}
         <br />
         <div style={{ display: 'flex', justifyContent: 'center', marginTop: '20px' }}>
-          <button className="bg-blue-100 hover:bg-blue-200 text-blue-900 font-bold py-2 px-4 rounded mr-4">Bghit nterjem!</button>
-          <button className="bg-green-100 hover:bg-green-200 text-green-900 font-bold py-2 px-4 rounded ml-4">Bghit nvalider data!</button>
+          <button className="bg-blue-100 hover:bg-blue-200 text-blue-900 font-bold py-2 px-4 rounded mr-4" onClick={() => scrollToSection('aji_terjem')}>Bghit nterjem!</button>
+          <button className="bg-green-100 hover:bg-green-200 text-green-900 font-bold py-2 px-4 rounded ml-4" onClick={() => scrollToSection('ytb_transcripts')}>Bghit nvalider data!</button>
         </div>
       </div>
       
